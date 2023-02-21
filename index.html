@@ -9,7 +9,14 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
@@ -17,13 +24,13 @@
       <img class="logo" src="./images/logo.svg" alt="snap logo" />
       <ul class="nav__list">
         <li>
-          <a class="nav__link" href="#">
+          <a class="nav__link nav__link--arrow" href="#">
             <span>Features</span>
             <img src="./images/icon-arrow-down.svg" alt="arrow down" />
           </a>
         </li>
         <li>
-          <a class="nav__link" href="#">
+          <a class="nav__link nav__link--arrow" href="#">
             <span>Company</span>
             <img src="./images/icon-arrow-down.svg" alt="arrow down" />
           </a>
@@ -31,20 +38,20 @@
         <li><a class="nav__link" href="#">Careers</a></li>
         <li><a class="nav__link" href="#">About</a></li>
       </ul>
-      <ul>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
+      <ul class="nav__list login__list">
+        <li><a class="nav__link" href="#">Login</a></li>
+        <li><a class="nav__link register" href="#">Register</a></li>
       </ul>
     </header>
     <main>
       <section class="hero-section container">
-        <div>
-          <h1>Make remote work</h1>
-          <p>
+        <div class="hero__content">
+          <h1 class="heading__primary">Make remote work</h1>
+          <p class="hero__text">
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
-          <a href="#" class="btn">Learn more</a>
+          <a href="#" class="btn__learn-more">Learn more</a>
           <div class="feature-in">
             <img src="./images/client-databiz.svg" alt="Databiz icon" />
             <img src="./images/client-audiophile.svg" alt="Audiophile icon" />
@@ -58,6 +65,7 @@
             srcset="./images/image-hero-mobile.png"
           />
           <img
+            class="hero-img"
             src="./images/image-hero-desktop.png"
             alt="a man standing using a computer"
           />

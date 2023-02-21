@@ -1,14 +1,27 @@
 :root {
   --text-color: hsl(0, 0%, 41%);
+  --white: hsl(0, 0%, 98%);
+  --black: hsl(0, 0%, 8%);
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%;
 }
+body{
+  font-family: 'Epilogue', sans-serif;
+}
 
 .container {
-  max-width: 100rem;
+  max-width: 118rem;
   margin: 0 auto;
+}
+
+.mgn-right-sm{
+  margin-right: 0.4rem;
 }
 
 /* ********************** */
@@ -16,30 +29,103 @@ html {
 /* ********************** */
 
 .header {
+  margin: 0 auto;
+  padding: 3.2rem 4rem;
   display: flex;
-  max-width: 120.8rem;
-  margin: 2rem auto;
-  align-items: center;
+  gap: 6.2rem;
+  width: 100%;
+  max-width: 144rem;
 }
 
 .logo {
-  height: 2.4rem;
+  height: 2.7rem;
 }
 
 .nav__list {
+  margin-top: 0.2rem;
   list-style: none;
   display: flex;
+  gap: 4rem;
+}
+.nav__link--arrow{
+  display: flex;
+  gap: 0.8rem;
   align-items: center;
-  gap: 2.4rem;
 }
 
 .nav__link:link,
 .nav__link:visited {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  font-family: inherit;
+  font-weight: 500;
   color: var(--text-color);
   text-decoration: none;
 }
 
+.nav__list.login__list{
+  margin-left: auto;
+}
+
+.register{
+  padding: 1.2rem 2rem;
+  border: 2px solid var(--text-color);
+  border-radius: 1.4rem;
+}
 /* ********************** */
 /* ***  HERO SECTION  *** */
 /* ********************** */
+
+.hero-section{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  column-gap: 12rem;
+  align-content: space-between;
+}
+
+.hero-img{
+  width: 100%;
+}
+
+.heading__primary{
+  font-size: 8rem;
+  letter-spacing: -1px;
+}
+
+.hero__content{
+  padding-top: 10rem;
+  padding-left: 3.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4.8rem;
+}
+
+.hero__text{
+  width: 80%;
+  color: var(--text-color);
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.btn__learn-more:link,
+.btn__learn-more:visited{
+  width: fit-content;
+
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--white);
+
+  padding: 1.8rem 3rem;
+  background-color: var(--black);
+  border-radius: 1.6rem;
+}
+.feature-in{
+  margin-top: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
