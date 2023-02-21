@@ -1,0 +1,45 @@
+:root {
+  --text-color: hsl(0, 0%, 41%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+/* ********************** */
+/* ******  HEADER  ****** */
+/* ********************** */
+
+.header {
+  display: flex;
+  max-width: 120.8rem;
+  margin: 2rem auto;
+  align-items: center;
+}
+
+.logo {
+  height: 2.4rem;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* ********************** */
+/* ***  HERO SECTION  *** */
+/* ********************** */
