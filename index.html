@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="snap logo" />
+      <ul>
+        <li>
+          <a class="nav__link" href="#"
+            ><span>Features</span
+            ><img src="./images/icon-arrow-down.svg" alt="arrow down"
+          /></a>
+        </li>
+        <li>
+          <a class="nav__link" href="#"
+            ><span>Company</span
+            ><img src="./images/icon-arrow-down.svg" alt="arrow down"
+          /></a>
+        </li>
+        <li><a class="nav__link" href="#">Careers</a></li>
+        <li><a class="nav__link" href="#">About</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div>
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.
+          </p>
+          <a href="#" class="btn">Learn more</a>
+          <div class="feature-in">
+            <img src="./images/client-databiz.svg" alt="Databiz icon" />
+            <img src="./images/client-audiophile.svg" alt="Audiophile icon" />
+            <img src="./images/client-meet.svg" alt="Maker icon" />
+            <img src="./images/client-maker.svg" alt="Maker icon" />
+          </div>
+        </div>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="./images/image-hero-mobile.png"
+          />
+          <img
+            src="./images/image-hero-desktop.png"
+            alt="a man standing using a computer"
+          />
+        </picture>
+
+      </section>
+    </main>
+  </body>
+</html>
