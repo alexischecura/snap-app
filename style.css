@@ -13,6 +13,7 @@ html {
 }
 body{
   font-family: 'Epilogue', sans-serif;
+  min-height: 100vh;
 }
 
 .container {
@@ -60,7 +61,13 @@ body{
   font-weight: 500;
   color: var(--text-color);
   text-decoration: none;
+  cursor: pointer;
 }
+.nav__link:hover,
+.nav__link:active {
+  color: var(--black);
+}
+
 
 .nav__list.login__list{
   margin-left: auto;
@@ -71,6 +78,9 @@ body{
   border: 2px solid var(--text-color);
   border-radius: 1.4rem;
 }
+.register:hover{
+  border: 2px solid var(--black);
+}
 /* ********************** */
 /* ***  HERO SECTION  *** */
 /* ********************** */
@@ -78,13 +88,13 @@ body{
 .hero-section{
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  column-gap: 12rem;
+  grid-template-columns: 1fr auto;
+  column-gap: 14rem;
   align-content: space-between;
 }
 
 .hero-img{
-  width: 100%;
+  width: 480px;
 }
 
 .heading__primary{
@@ -95,14 +105,15 @@ body{
 .hero__content{
   padding-top: 10rem;
   padding-left: 3.6rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   gap: 4.8rem;
 }
 
 .hero__text{
-  width: 80%;
+  width: 90%;
   color: var(--text-color);
   font-size: 1.8rem;
   line-height: 1.6;
@@ -118,14 +129,22 @@ body{
   font-weight: 700;
   color: var(--white);
 
-  padding: 1.8rem 3rem;
+  padding: 1.6rem 2.8rem;
   background-color: var(--black);
   border-radius: 1.6rem;
+  border: 2px solid var(--black);
 }
+
+.btn__learn-more:hover,
+.btn__learn-more:active{ 
+  background-color: var(--white);
+  color: var(--black);
+}
+
 .feature-in{
   margin-top: auto;
-  width: 90%;
+  /* width: 90%; */
   display: flex;
-  justify-content: space-between;
+  gap: 4rem;
   align-items: center;
 }
