@@ -23,17 +23,30 @@
     <header class="header">
       <img class="logo" src="./images/logo.svg" alt="snap logo" />
       <ul class="nav__list">
-        <li>
-          <a class="nav__link nav__link--arrow" href="#">
-            <span>Features</span>
-            <img src="./images/icon-arrow-down.svg" alt="arrow down" />
-          </a>
+        <li class="nav__submenu">
+          <a class="nav__link nav__link--submenu" href="#">
+              <span>Features</span>
+              <!-- <img src="./images/icon-arrow-up.svg" alt="arrow up" /> -->
+              <img src="./images/icon-arrow-down.svg" alt="arrow down" />
+            </a>
+            <ul class="submenu">
+              <li><a href="#">Submenu item 1</a></li>
+              <li><a href="#">Submenu item 2</a></li>
+              <li><a href="#">Submenu item 3</a></li>
+            </ul>
+          
         </li>
-        <li>
-          <a class="nav__link nav__link--arrow" href="#">
+        <li class="nav__submenu">
+          <a class="nav__link nav__link--submenu" href="#">
             <span>Company</span>
             <img src="./images/icon-arrow-down.svg" alt="arrow down" />
           </a>
+            <ul class="submenu">
+              <li><a href="#">Submenu item 1</a></li>
+              <li><a href="#">Submenu item 2</a></li>
+              <li><a href="#">Submenu item 3</a></li>
+            </ul>
+          
         </li>
         <li><a class="nav__link" href="#">Careers</a></li>
         <li><a class="nav__link" href="#">About</a></li>
